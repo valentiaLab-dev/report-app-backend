@@ -10,8 +10,6 @@ app.get('/', (request, response) => {
 
 
 const PORT = process.env.PORT || 3000
-const TEST = process.env.TEST || "No test environment variable found"
-console.log(`Starting server on port ${TEST}...`)
 app.listen(PORT, () => {
  console.log(`Server running on port ${PORT}`)
 })
