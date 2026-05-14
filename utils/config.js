@@ -1,6 +1,5 @@
 require('dotenv').config()
 
-console.log(process.env.NODE_ENV)
 const MONGODB_URI = process.env.NODE_ENV === 'prod' 
 ? process.env.MONGODB_URI
 : process.env.DEV_MONGODB_URI
