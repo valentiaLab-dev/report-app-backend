@@ -1,0 +1,90 @@
+{
+  "info": {
+    "_postman_id": "174e47ff-c07c-4f50-aeac-abaa342fcd71",
+    "name": "Report App",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "16003882"
+  },
+  "item": [
+    {
+      "name": "report",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"lat\":\"0\",\n    \"lng\": \"0\",\n    \"name\": \"Test Name\",\n    \"contact\": \"0976121212\",\n    \"municipality\": \"Test State\",\n    \"brgy\": \"Test Brgy.\",\n    \"address\": \"test \",\n    \"details\": \"post is burning near intersection\",\n    \"date\": \"May 13, 2026\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/reports",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "reports"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "login",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"lat\":\"9.755843159204273\",\n    \"lng\": \"126.05725860101786\",\n    \"name\": \"Valentia lab\",\n    \"contact\": \"0976121212\",\n    \"municipality\": \"Dapa\",\n    \"brgy\": \"Brgy. 1\",\n    \"address\": \"\",\n    \"details\": \"post is burning near kawit intersection\",\n    \"date\": \"May 13, 2026\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/login",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "user",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"hire_date\": \"4/12/2025\",\n    \"salary\": 1,\n    \"is_active\": true,\n    \"employee\": \"68f110602879f920977a3c8d\",\n    \"access\": \"68f0a545b5d2446d9b132893\",\n    \"username\":\"\"\n    \"password\": \"\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/api/users",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "api",
+            "users"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
